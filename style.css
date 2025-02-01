@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    min-width: 300px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input, textarea, select, button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme .container {
+    background: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme header h1 {
+    color: #fff;
+}
+
+body.dark-theme h2 {
+    color: #bbb;
+}
+
+body.dark-theme li {
+    background: #333;
+    color: #e0e0e0;
+}
+
+body.dark-theme input, body.dark-theme textarea, 
+body.dark-theme select, body.dark-theme button {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.dark-theme button {
+    background: #555;
+}
+
+body.dark-theme button:hover {
+    background: #777;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+}
+
+form input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}

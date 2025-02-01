@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TODO App</h1>
+            <button id="theme-toggle">Switch Theme</button>
+            <button id="logout-btn" style="display: none;">Logout</button>
+            <span id="user-email"></span>
+        </header>
+        <main>
+            <section id="boards-section">
+                <h2>Boards</h2>
+                <ul id="boards-list"></ul>
+                <input type="text" id="board-name" placeholder="New Board Name">
+                <button id="create-board-btn">Create Board</button>
+            </section>
+
+            <section id="tasks-section">
+                <h2>Tasks</h2>
+                <select id="board-select">
+                    <option value="" disabled selected>Select a Board</option>
+                </select>
+                <select id="task-sort">
+                    <option value="priority">Sort by Priority</option>
+                    <option value="due_date">Sort by Due Date</option>
+                </select>
+                <select id="task-filter">
+                    <option value="">All Statuses</option>
+                    <option value="в работе">In Progress</option>
+                    <option value="выполнено">Completed</option>
+                </select>
+                <ul id="tasks-list"></ul>
+            </section>
+        
+            <section id="create-task-section">
+                <h2>Create Task</h2>
+                <input type="text" id="task-title" placeholder="Task Title">
+                <textarea id="task-desc" placeholder="Task Description"></textarea>
+                <input type="datetime-local" id="task-due-date">
+                <select id="task-priority">
+                    <option value="" disabled selected>Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button id="create-task-btn">Create Task</button>
+            </section>
+        </main>
+        <footer>
+            <p>TODO App © 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
